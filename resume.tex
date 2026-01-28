@@ -11,19 +11,9 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[margin=0.5in]{geometry} % <-- CHANGED: use geometry for margins
+\usepackage[margin=0.5in]{geometry}
 \input{glyphtounicode}
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage[default]{sourcesanspro}
 
 % --- Page style ---
 \pagestyle{fancy}
@@ -31,13 +21,6 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% --- REMOVE manual margin hacks (geometry handles it now) ---
-% \addtolength{\oddsidemargin}{-0.5in}
-% \addtolength{\evensidemargin}{-0.5in}
-% \addtolength{\textwidth}{1in}
-% \addtolength{\topmargin}{-.5in}
-% \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -61,7 +44,6 @@
   }
 }
 
-% --- CHANGED: use full \textwidth instead of 0.97\textwidth ---
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -88,7 +70,6 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-% --- CHANGED: remove the extra list inset ---
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.25em]}
@@ -120,8 +101,6 @@
         \resumeItem{\textbf{Relevant Courses}: Data Structures \& Algorithms, Operating Systems, 
         Database Management, Software Engineering}
         \resumeItem{\textbf{Study Abroad}: University College Dublin (Summer 2024) - Dublin, Ireland}
-        %\resumeItem{\textbf{Honors}: New American University Scholar - President's Scholarship and 
-        %Dean's List (5 consecutive semesters)}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
