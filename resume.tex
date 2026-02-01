@@ -30,7 +30,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated pdf is machine readable/ATS parsable
@@ -47,9 +47,17 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & #2 \\ [-2pt]
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubheadingWithTitle}[5]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\textit{ - #2} & #3 \\ [-2pt]
+      \small#4 & \textit{\small #5} \\
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -81,8 +89,12 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\LARGE Garrett Gibson} \\ \vspace{1pt}
-    \small (480)482-8432 $|$ \href{mailto:garrettsgibson@gmail.com}{\underline{garrettsgibson@gmail.com}} $|$ 
+    \textbf{\LARGE Garrett Gibson} 
+    \\ \vspace{1pt}
+    \small (480)482-8432 
+    $|$ 
+    \href{mailto:garrettsgibson@gmail.com}{\underline{garrettsgibson@gmail.com}} 
+    \\ \vspace{1pt}
     \href{https://www.linkedin.com/in/garrettsgibson/}{\underline{linkedin.com/in/garrettsgibson/}}
     $|$ 
     \href{https://github.com/garrettsg}{\underline{github.com/garrettsg}}
@@ -116,8 +128,8 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {\textbf{Software Engineering Internship}}{Jan. 2026 -- Present}
+    \resumeSubheadingWithTitle
+      {\textbf{Software Engineering Intern}}{Cloud Flight Planning Services}{Jan. 2026 -- Present}
       {Garmin}{Chandler, AZ}
       \resumeItemListStart
         \resumeItem{Garmin Info}
@@ -125,17 +137,18 @@
         \resumeItem{Garmin Info}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {\textbf{IT Full-Stack Development Internship - Integrations Team}}{Jun. 2025 -- Dec. 2025}
+    \resumeSubheadingWithTitle
+      {\textbf{IT Full-Stack Development Intern}}{Integrations Team}{Jun. 2025 -- Dec. 2025}
       {Meritage Homes}{Scottsdale, AZ}
       \resumeItemListStart
         \resumeItem{Developed \textbf{RESTful APIs} to integrate Salesforce, EnterpriseOne, and internal web applications}
         \resumeItem{Built reusable \textbf{NuGet packages} in \textbf{.NET/C\#}, standardizing backend logic across multiple microservices}
         \resumeItem{Automated data workflows from \textbf{Snowflake Data Warehouse} to Avid Ratings, eliminating manual data entry}
+        \resumeItem{Designed an event-driven \textbf{Azure Logic App} integrating Microsoft Forms and Azure Active Directory to automate hierarchical email distribution}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {\textbf{Undergraduate Teaching Assistant - Data Structures and Algorithms}}{Aug. 2025 -- Present}
+      \resumeSubheadingWithTitle
+      {\textbf{Undergraduate Teaching Assistant}}{Data Structures and Algorithms}{Aug. 2025 -- Present}
       {Arizona State University}{Tempe, AZ}
       \resumeItemListStart
         \resumeItem{Support classes of 120+ students in advanced Data Structures \& Algorithms taught fully in \textbf{C++}.}
@@ -179,7 +192,7 @@
       {Treasurer}{Tempe, AZ}
       \resumeItemListStart
         \resumeItem{Manage organizational finances, budgeting, and event planning in collaboration with the executive board.}
-        \resumeItem{Promote study abroad opportunities and mentor international students during their academic and cultural transition.}
+        \resumeItem{Promote study abroad opportunities and mentor international students during their academic and cultural transition to ASU.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
